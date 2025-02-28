@@ -5,7 +5,8 @@ on:
  workflow_dispatch:
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: env_emage_name
+# IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push-image:
